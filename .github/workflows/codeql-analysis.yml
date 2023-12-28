@@ -76,8 +76,8 @@ jobs:
     #     ./location_of_script_within_repo/buildscript.sh
     - name: Build and test
       run: |
-          dotnet build ./CSHARP/CSHARP.sln --configuration Release
-          dotnet test ./CSHARP/CSHARP.sln --configuration Release
+          dotnet build ./CSHARP.sln --configuration Release
+          dotnet test ./CSHARP.sln --configuration Release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
